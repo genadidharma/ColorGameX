@@ -51,7 +51,7 @@ public class TestB2AdvancedWidgetsX031 extends ViewTest {
         /******** Check components completion ********/
         /** Specified Elements **/
         List<Class> elements = new ArrayList<>();
-        elements.add(com.google.android.material.textview.MaterialTextView.class); //Element 1
+        elements.add(AppCompatTextView.class); //Element 1
         elements.add(LinearLayout.class);  //Element 2
         elements.add(LinearLayout.class);  //Element 3
         elements.add(RelativeLayout.class);  //Element 4
@@ -114,7 +114,7 @@ public class TestB2AdvancedWidgetsX031 extends ViewTest {
 
         List<Class> elements = new ArrayList<>();
         elements.add(AppCompatEditText.class); //Element 1
-        elements.add(com.google.android.material.button.MaterialButton.class);  //Element 2
+        elements.add(AppCompatButton.class);  //Element 2
         testCompletion(0,elements,layout);
 
         //Check 1st element
@@ -128,7 +128,7 @@ public class TestB2AdvancedWidgetsX031 extends ViewTest {
         comp1.testBgColor(-328966);
 
         //Check 2nd element
-        AppCompatButton component2 = (com.google.android.material.button.MaterialButton) layout.getChildAt(1);
+        AppCompatButton component2 = (AppCompatButton) layout.getChildAt(1);
         ElementTest comp2 = new ElementTest(component2);
         comp2.testIdName("submitBtn");
         comp2.testWidth(LinearLayout.LayoutParams.WRAP_CONTENT);
@@ -160,13 +160,13 @@ public class TestB2AdvancedWidgetsX031 extends ViewTest {
         LinearLayout layout = (LinearLayout) mainLayout.getChildAt(2);
 
         List<Class> elements = new ArrayList<>();
-        elements.add(com.google.android.material.textview.MaterialTextView.class); //Element 1
+        elements.add(AppCompatTextView.class); //Element 1
         elements.add(Space.class);  //Element 2
-        elements.add(com.google.android.material.textview.MaterialTextView.class);  //Element 3
+        elements.add(AppCompatTextView.class);  //Element 3
         testCompletion(0,elements,layout);
 
         //Check 1st element
-        AppCompatTextView component1 = (com.google.android.material.textview.MaterialTextView) layout.getChildAt(0);
+        AppCompatTextView component1 = (AppCompatTextView) layout.getChildAt(0);
         ElementTest comp1 = new ElementTest(component1);
         comp1.testIdName("clrText");
         comp1.testWidth(150);
@@ -186,7 +186,7 @@ public class TestB2AdvancedWidgetsX031 extends ViewTest {
         comp2.testHeight(10);
 
         //Check 3rd element
-        AppCompatTextView component3 = (com.google.android.material.textview.MaterialTextView) layout.getChildAt(2);
+        AppCompatTextView component3 = (AppCompatTextView) layout.getChildAt(2);
         ElementTest comp3 = new ElementTest(component3);
         comp3.testIdName("appText1");
         comp3.testWidth(ViewGroup.LayoutParams.WRAP_CONTENT);
@@ -217,9 +217,9 @@ public class TestB2AdvancedWidgetsX031 extends ViewTest {
         ViewGroup layout = (RelativeLayout) mainLayout.getChildAt(3);
 
         List<Class> elements = new ArrayList<>();
-        elements.add(com.google.android.material.button.MaterialButton.class); //Element 1
-        elements.add(com.google.android.material.button.MaterialButton.class);  //Element 2
-        elements.add(com.google.android.material.button.MaterialButton.class);  //Element 3
+        elements.add(AppCompatButton.class); //Element 1
+        elements.add(AppCompatButton.class);  //Element 2
+        elements.add(AppCompatButton.class);  //Element 3
         testCompletion(0,elements,layout);
 
         int styleWidth = 111;
@@ -227,7 +227,7 @@ public class TestB2AdvancedWidgetsX031 extends ViewTest {
         int styleTextSize = 18;
 
         //Check 1st element
-        AppCompatButton component1 = (com.google.android.material.button.MaterialButton) layout.getChildAt(0);
+        AppCompatButton component1 = (AppCompatButton) layout.getChildAt(0);
         ElementTest comp1 = new ElementTest(component1);
         comp1.testIdName("color1");
         comp1.testWidth(styleWidth);
@@ -238,7 +238,7 @@ public class TestB2AdvancedWidgetsX031 extends ViewTest {
         comp1.testOnClickMethod("submitColor");
 
         //Check 2nd element
-        AppCompatButton component2 = (com.google.android.material.button.MaterialButton) layout.getChildAt(1);
+        AppCompatButton component2 = (AppCompatButton) layout.getChildAt(1);
         ElementTest comp2 = new ElementTest(component2);
         comp2.testIdName("color2");
         comp2.testWidth(styleWidth);
@@ -250,7 +250,7 @@ public class TestB2AdvancedWidgetsX031 extends ViewTest {
         comp2.testCenterInParent();
 
         //Check 3rd element
-        AppCompatButton component3 = (com.google.android.material.button.MaterialButton) layout.getChildAt(2);
+        AppCompatButton component3 = (AppCompatButton) layout.getChildAt(2);
         ElementTest comp3 = new ElementTest(component3);
         comp3.testIdName("color3");
         comp3.testWidth(styleWidth);
@@ -294,9 +294,9 @@ public class TestB2AdvancedWidgetsX031 extends ViewTest {
         ViewGroup layout= (RelativeLayout) mainLayout.getChildAt(5);
 
         List<Class> elements = new ArrayList<>();
-        elements.add(com.google.android.material.button.MaterialButton.class); //Element 1
-        elements.add(com.google.android.material.button.MaterialButton.class);  //Element 2
-        elements.add(com.google.android.material.button.MaterialButton.class);  //Element 3
+        elements.add(AppCompatButton.class); //Element 1
+        elements.add(AppCompatButton.class);  //Element 2
+        elements.add(AppCompatButton.class);  //Element 3
         testCompletion(0,elements,layout);
 
         int styleWidth = 111;
@@ -304,7 +304,7 @@ public class TestB2AdvancedWidgetsX031 extends ViewTest {
         int styleTextSize = 18;
 
         //Check 1st element
-        AppCompatButton component1 = (com.google.android.material.button.MaterialButton) layout.getChildAt(0);
+        AppCompatButton component1 = (AppCompatButton) layout.getChildAt(0);
         ElementTest comp1 = new ElementTest(component1);
         comp1.testIdName("color4");
         comp1.testWidth(styleWidth);
@@ -315,7 +315,7 @@ public class TestB2AdvancedWidgetsX031 extends ViewTest {
         comp1.testOnClickMethod("submitColor");
 
         //Check 2nd element
-        AppCompatButton component2 = (com.google.android.material.button.MaterialButton) layout.getChildAt(1);
+        AppCompatButton component2 = (AppCompatButton) layout.getChildAt(1);
         ElementTest comp2 = new ElementTest(component2);
         comp2.testIdName("color5");
         comp2.testWidth(styleWidth);
@@ -327,7 +327,7 @@ public class TestB2AdvancedWidgetsX031 extends ViewTest {
         comp2.testCenterInParent();
 
         //Check 3rd element
-        AppCompatButton component3 = (com.google.android.material.button.MaterialButton) layout.getChildAt(2);
+        AppCompatButton component3 = (AppCompatButton) layout.getChildAt(2);
         ElementTest comp3 = new ElementTest(component3);
         comp3.testIdName("color6");
         comp3.testWidth(styleWidth);
@@ -361,13 +361,13 @@ public class TestB2AdvancedWidgetsX031 extends ViewTest {
         LinearLayout layout = (LinearLayout) mainLayout.getChildAt(6);
 
         List<Class> elements = new ArrayList<>();
-        elements.add(com.google.android.material.textview.MaterialTextView.class); //Element 1
-        elements.add(com.google.android.material.textview.MaterialTextView.class);  //Element 2
-        elements.add(com.google.android.material.textview.MaterialTextView.class);  //Element 3
+        elements.add(AppCompatTextView.class); //Element 1
+        elements.add(AppCompatTextView.class);  //Element 2
+        elements.add(AppCompatTextView.class);  //Element 3
         testCompletion(0,elements,layout);
 
         //Check 1st element
-        AppCompatTextView component1 = (com.google.android.material.textview.MaterialTextView) layout.getChildAt(0);
+        AppCompatTextView component1 = (AppCompatTextView) layout.getChildAt(0);
         ElementTest comp1 = new ElementTest(component1);
         comp1.testIdName("timerText");
         comp1.testWidth(ViewGroup.LayoutParams.WRAP_CONTENT);
@@ -382,7 +382,7 @@ public class TestB2AdvancedWidgetsX031 extends ViewTest {
         comp1.testGravity(Gravity.CENTER);
 
         //Check 2nd element
-        AppCompatTextView component2 = (com.google.android.material.textview.MaterialTextView) layout.getChildAt(1);
+        AppCompatTextView component2 = (AppCompatTextView) layout.getChildAt(1);
         ElementTest comp2 = new ElementTest(component2);
         comp2.testIdName("appText2");
         comp2.testWidth(ViewGroup.LayoutParams.WRAP_CONTENT);
@@ -393,7 +393,7 @@ public class TestB2AdvancedWidgetsX031 extends ViewTest {
         comp2.testGravity(Gravity.CENTER);
 
         //Check 3rd element
-        AppCompatTextView component3 = (com.google.android.material.textview.MaterialTextView) layout.getChildAt(2);
+        AppCompatTextView component3 = (AppCompatTextView) layout.getChildAt(2);
         ElementTest comp3 = new ElementTest(component3);
         comp3.testIdName("scoreText");
         comp3.testWidth(120);
@@ -431,7 +431,7 @@ public class TestB2AdvancedWidgetsX031 extends ViewTest {
         elements.add(Space.class); //Element 1
         elements.add(ProgressBar.class);  //Element 2
         elements.add(Switch.class);  //Element 3
-        elements.add(com.google.android.material.button.MaterialButton.class);  //Element 4
+        elements.add(AppCompatButton.class);  //Element 4
         testCompletion(0,elements,layout);
 
         //Check 1st element
@@ -460,7 +460,7 @@ public class TestB2AdvancedWidgetsX031 extends ViewTest {
         comp3.testPaddingBottom(20);
 
         //Check 4th element
-        AppCompatButton component4 = (com.google.android.material.button.MaterialButton) layout.getChildAt(3);
+        AppCompatButton component4 = (AppCompatButton) layout.getChildAt(3);
         ElementTest comp4 = new ElementTest(component4);
         comp4.testIdName("startBtn");
         comp4.testWidth(150);

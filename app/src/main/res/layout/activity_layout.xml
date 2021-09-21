@@ -73,13 +73,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="invisible">
-
         <Button
             android:id="@+id/color1"
             style="@style/ColoredButton"
+            android:text="A"
             android:background="@color/clrRed"
-            android:onClick="submitColor"
-            android:text="A" />
+            android:onClick="submitColor"/>
         <Button
             android:id="@+id/color2"
             style="@style/ColoredButton"
